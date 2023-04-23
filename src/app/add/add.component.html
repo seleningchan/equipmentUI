@@ -1,0 +1,17 @@
+<div class="add">
+    <h2>Add equipment：</h2>
+    <label>model
+        <input [(ngModel)]="equipment.model" placeholder="Please enter model">
+    </label>
+    <label>brand
+        <input [(ngModel)]="equipment.brand" placeholder="Please enter brand">
+    </label>
+    <label>weight
+        <input [(ngModel)]="equipment.weight" placeholder="Please enter weight">
+    </label>
+    <label>manufacture date
+        <input [(ngModel)]="equipment.manufactureDate" placeholder="Please enter manufacture date">
+    </label>
+    <div><button (click)="add(equipment)">添加</button></div>
+</div>
+

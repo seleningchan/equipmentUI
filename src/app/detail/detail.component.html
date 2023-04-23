@@ -1,0 +1,29 @@
+<div *ngIf="equipment" class="equiment_item">
+    <div>id: {{equipment.id}}</div>
+    <div>model: {{equipment.model}}</div>
+    <div>brand: {{equipment.brand}}</div>
+    <div>weight: {{equipment.weight}}</div>
+    <div>manufacture date: {{equipment.manufactureDate}}</div>
+
+    <div>
+        <h2>Modify：</h2>
+        <label>model
+            <input [(ngModel)]="equipment.model" placeholder="Please enter model">
+        </label>
+        <label>brand
+            <input [(ngModel)]="equipment.brand" placeholder="Please enter brand">
+        </label>
+        <label>weight
+            <input [(ngModel)]="equipment.weight" placeholder="Please enter weight">
+        </label>
+        <label>manufacture date
+            <input [(ngModel)]="equipment.manufactureDate" placeholder="Please enter manufacture date">
+        </label>
+        <button (click)="save()">保存</button>
+        <button (click)="goBack()">返回</button>
+    </div>
+</div>
+
+<div *ngIf="!equipment">
+    <h3>暂无信息</h3>
+</div>

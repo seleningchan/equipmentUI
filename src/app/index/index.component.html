@@ -1,0 +1,5 @@
+
+<div class="equiment_box">
+    <app-equipments *ngFor="let item of equipments" [equipment]="item"  (change) = "funChange(item, $event)"></app-equipments>
+</div>
+
